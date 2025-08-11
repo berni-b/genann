@@ -40,3 +40,7 @@ Thumbs.db
 /build/
 /bin/
 /obj/
+
+# Language servers and tool caches
+.cache/
+compile_commands.json
