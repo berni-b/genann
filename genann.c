@@ -105,6 +105,10 @@ double genann_act_threshold(const struct genann *ann unused, double a) {
     return a > 0;
 }
 
+double genann_act_relu(const genann *ann, double a) {
+    return a > 0 ? a : 0;
+}
+
 genann *genann_init(int inputs, int hidden_layers, int hidden, int outputs) {
     if (hidden_layers < 0) return 0;
     if (inputs < 1) return 0;

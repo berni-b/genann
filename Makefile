@@ -12,6 +12,10 @@ threshold: all
 linear: CFLAGS += -Dgenann_act=genann_act_linear
 linear: all
 
+relu: CFLAGS += -Dgenann_act=genann_act_relu
+relu: all
+
+
 test: test.o genann.o
 
 check: test
